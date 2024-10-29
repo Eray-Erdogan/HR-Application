@@ -1,5 +1,4 @@
-markdown
-Kodu kopyala
+**https://www.youtube.com/watch?v=l6ZBoUWPOsc**
 # HR Q&A with Eray
 
 ## Description
