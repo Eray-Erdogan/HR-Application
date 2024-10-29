@@ -34,14 +34,16 @@ def hr_index():
 # 6.	Write a function to connect to the Bedrock Foundation Model:
 #     •	Name the function VectorstoreIndexCreator.
 def hr_llm():
-    llm=Bedrock(
+    llm = Bedrock(
         credentials_profile_name='default',
-        model_id='anthropic.claude-v2',
+        model_id='amazon.titan-text-premier-v1:0',
         model_kwargs={
-            "max_tokens_to_sample": 3000,
-            "temperature": 0.1,
-            "top_p": 0.9})
+            "temperature": 0.1
+            # Removed max_tokens_to_sample and top_p
+        })
     return llm
+
+
 
 # 7.	Write a function that searches the user prompt, finds the best match from the Vector DB, and sends both to the Bedrock-LLM.
 
